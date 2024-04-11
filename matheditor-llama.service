@@ -1,0 +1,10 @@
+[Unit]
+Description=Gunicorn Daemon for Matheditor Llama Application
+After=network.target
+
+[Service]
+User=ubuntu
+Group=www-data
+WorkingDirectory=/home/ubuntu/matheditor-llama
+ExecStart=/home/ubuntu/matheditor-llama/venv/bin/python3 -m llama_cpp.server --config_file /home/ubuntu/matheditor-llama/config.json
+WantedBy=multi-user.target
