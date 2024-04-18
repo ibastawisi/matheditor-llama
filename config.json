@@ -3,12 +3,9 @@
   "port": 5000,
   "models": [
     {
-      "model": "/home/ubuntu/matheditor-llama/models/mistral-7b-instruct-v0.1.Q4_0.gguf",
+      "model": "/home/ubuntu/matheditor-llama/models/gemma-1.1-2b-it-Q4_K_M.gguf",
       "model_alias": "gpt-3.5-turbo",
-      "chat_format": "chatml",
-      "n_threads": 4,
-      "n_batch": 512,
-      "n_ctx": 2048
+      "chat_format": "chatml"
     }
   ]
 }
